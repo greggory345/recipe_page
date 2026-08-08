@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body{
     min-height: 100vh;
     background-color: hsl(30, 54%, 90%);
     padding: 2.5rem 1.25rem;
-    /* font-family: "Young Serif", serif; */  
+    font-family: 'Outfit', sans-serif;  
 }
 .recipe_card {
 background-color:hsl(0, 0%, 100%);
@@ -105,7 +105,7 @@ border-bottom: 0.0625rem solid #e3ddd7;
 font-family: "Young Serif", serif;
 font-size: 1.75rem;
 font-weight: 400;
-color: hsl(332, 51%, 32%);
+color: hsl(14, 45%, 36%);
 margin-bottom: 1.25rem;
 }
 
@@ -127,7 +127,7 @@ margin-bottom: 0;
 }
 
 .ingredients_item::marker {
-color:  hsl(332, 51%, 32%);
+color:  hsl(14, 45%, 36%);
 font-size: 0.625rem;
 }
 
@@ -149,7 +149,7 @@ margin-bottom: 1.5rem;
 }
 
 .instructions_item::marker {
-color: hsl(332, 51%, 32%);
+color: hsl(14, 45%, 36%);
 font-weight: 700;
 }
 
@@ -186,7 +186,7 @@ text-align: left;
 }
 
 .nutrition_value {
-color: #854632;
+color:  hsl(14, 45%, 36%);
 font-size:1rem;
 font-weight: 700;
 padding: 0.75rem 2rem;
@@ -199,40 +199,64 @@ text-decoration: none;
 color: hsl(30, 10%, 34%);
 }
 
+/* .instructions_dividers {
+    padding: 2.5rem;
+}
+
+footer {
+    padding: 2.5rem;
+} */
+
 @media (max-width: 480px) {
-body {
-    padding: 0;
+    body {
+        padding: 0;
+    }
+
+    .recipe_card {
+        border-radius: 0;
+        padding: 0 0 2rem 0;
+    }
+
+    .recipe-card_image {
+        border-radius: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .recipe_card_title {
+        font-size: 2.25rem;
+        padding: 0 2rem;
+    }
+
+    .recipe_card_description {
+        padding: 0 2rem;
+    }
+
+
+    .section {
+        padding: 0 2rem;
+    }
+
+
+    .section_divider {
+        margin: 0 2rem 2rem 2rem;
+        padding: 0 0 2rem 0;
+    }
+
+
+    .prep_time {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .instructions_dividers {
+        padding: 2rem;
+        margin: 0 0 2rem;
+    }
+    footer {
+        padding: 2rem;
+    }
+
 }
 
-.recipe_card {
-    border-radius: 0;
-    padding: 0 0 2rem 0;
-}
 
-.recipe-card_image {
-    border-radius: 0;
-    margin-bottom: 1.5rem;
-}
 
-.recipe_card_title {
-    font-size: 2.25rem;
-    padding: 0 2rem;
-}
-}
 
-.recipe_card_description {
-    padding: 0 2rem;
-}
-
-.prep_time {
-    margin: 0 2rem 2rem 2rem;
-}
-
-.section {
-    padding: 0 2rem;
-}
-
-.section_divider {
-    margin: 0 2rem 2rem 2rem;
-    padding: 0 0 2rem 0;
-}
